@@ -10,3 +10,5 @@ oc apply -f clusters/egd_ocp/_system/argocd/manifests/05_argocd_config.yaml
 sleep 60
 oc apply -f clusters/egd_ocp/_app_of_apps/
 ```
+
+See: https://openshift-gitops-server-openshift-gitops.apps.egd.germanywestcentral.aroapp.io

@@ -28,3 +28,5 @@ Refresh ArgoCD App of Apps in using kubectl:
 ```
 kubectl annotate application -n argocd app-of-apps-egd-rke2 argocd.argoproj.io/refresh=hard --overwriteapplication.argoproj.io/app-of-apps-egd-rke2
 ```
+
+See: http://argocd.egd-rke2.sikademo.com/
