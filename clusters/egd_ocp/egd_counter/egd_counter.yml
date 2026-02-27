@@ -28,9 +28,9 @@ spec:
         FONT_COLOR: red
         BACKGROUND_COLOR: yellow
 
-        backendReplicas: 2
-        frontendReplicas: 2
-        frontendExpReplicas: 2
+        backendReplicas: 1
+        frontendReplicas: 1
+        frontendExpReplicas: 1
 
         ingressTlsEnabled: false
 
