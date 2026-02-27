@@ -1,0 +1,26 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cluster-logging-application-view
+  annotations:
+    argocd.argoproj.io/sync-wave: "-9"
+rules:
+  - apiGroups:
+      - loki.grafana.com
+    resources:
+      - application
+    verbs:
+      - get
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: grafana-logging-application-view
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-logging-application-view
+subjects:
+  - kind: ServiceAccount
+    name: grafana-sa
+    namespace: grafana
