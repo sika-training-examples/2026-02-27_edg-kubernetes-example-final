@@ -21,6 +21,6 @@ spec:
     path: charts/hello-world
     helm:
       valuesObject:
-        host: hello-world.egd-rke2.sikademo.com
+        host: hello-world-egd-rke2.sikademo.com
         image: ghcr.io/sikalabs/hello-world-server:egd
         replicas: 3
