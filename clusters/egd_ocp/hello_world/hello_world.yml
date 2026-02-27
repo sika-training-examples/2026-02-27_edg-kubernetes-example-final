@@ -23,7 +23,7 @@ spec:
       valuesObject:
         host: hello-world.apps.egd.germanywestcentral.aroapp.io
         image: ghcr.io/sikalabs/hello-world-server:egd
-        replicas: 3
+        replicas: 1
 
         ingressClassName: openshift-default
         ingressTlsDisable: true
